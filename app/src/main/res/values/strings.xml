@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">GitHubSearchApp</string>
+    <string name="repo_format_string">Repo: %d</string>
+    <string name="followers_format_string">%d Followers</string>
+    <string name="following_format_string">%d Following</string>
+    <string name="forks_format_string">%d Forks</string>
+    <string name="stars_format_string">%d Stars</string>
 </resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main_nav_graph"
+    app:startDestination="@id/searchUserFragment">
+
+    <fragment
+        android:id="@+id/searchUserFragment"
+        android:name="com.ader.githubsearchapp.presentation.ui.fragments.SearchUserFragment"
+        android:label="SearchUserFragment" >
+        <action
+            android:id="@+id/action_searchUserFragment_to_userDetailsFragment"
+            app:destination="@id/userDetailsFragment">
+            <argument
+                android:name="userModel"
+                app:argType="com.ader.githubsearchapp.domain.model.UserModel" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/userDetailsFragment"
+        android:name="com.ader.githubsearchapp.presentation.ui.fragments.UserDetailsFragment"
+        android:label="UserDetailsFragment" >
+        <argument
+            android:name="userModel"
+            app:argType="com.ader.githubsearchapp.domain.model.UserModel" />
+    </fragment>
+</navigation>
